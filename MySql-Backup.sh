@@ -20,8 +20,8 @@
     mkdir $DB_BACKUP/01
 
     cd $DB_BACKUP/ && cd $DB_BACKUP/01
-    $MYSQL -u $DB_USER -p=$DB_PASSWD -Bse "show databases" |while read m; \
-    do $MYSQLDUMP -u $DB_USER -password=$DB_PASSWD `echo $m` > `echo $m`.sql;done
+    $MYSQL -u$DB_USER -p$DB_PASSWD -Bse "show databases" |while read m; \
+    do $MYSQLDUMP -u$DB_USER -p$DB_PASSWD `echo $m` > `echo $m`.sql;done
     bzip2 *sql
 
     echo "* Creating new backup…"
