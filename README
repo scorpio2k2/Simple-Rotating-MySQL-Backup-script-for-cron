@@ -1,3 +1,2 @@
 Backs up all databases, saves the last 4 copies.
-In this example, each database will be stored separately and we will save all databases 
-We will also have the last 4 copies.
+In this example, each database will be stored separately.
